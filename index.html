@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universal Relis Resources (URR)</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+header h2{
+    font-weight:700;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00d4ff;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:0 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.hero button{
+    padding:15px 35px;
+    border:none;
+    background:#00d4ff;
+    color:black;
+    font-weight:600;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    background:white;
+}
+
+section{
+    padding:100px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+    font-size:32px;
+    font-weight:700;
+    color:#2c5364;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.service-card h3{
+    margin-bottom:15px;
+    color:#203a43;
+}
+
+.about{
+    background:#ffffff;
+    border-radius:15px;
+    padding:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.contact a{
+    display:inline-block;
+    margin-top:15px;
+    padding:15px 35px;
+    background:#203a43;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.contact a:hover{
+    background:#00d4ff;
+    color:black;
+}
+
+footer{
+    background:#0f2027;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>URR</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Universal Relis Resources</h1>
+        <p>Innovative Technology Solutions for Modern Businesses</p>
+        <button onclick="document.getElementById('contact').scrollIntoView()">Get Started</button>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+        <div class="service-card">
+            <h3>Software Development</h3>
+            <p>Custom web, mobile, and enterprise applications built with cutting-edge technologies.</p>
+        </div>
+        <div class="service-card">
+            <h3>Digital Marketing</h3>
+            <p>Strategic marketing solutions including SEO, social media, and paid advertising campaigns.</p>
+        </div>
+        <div class="service-card">
+            <h3>Data Engineering</h3>
+            <p>Advanced data pipelines, analytics systems, and business intelligence solutions.</p>
+        </div>
+        <div class="service-card">
+            <h3>IT Consulting</h3>
+            <p>Expert technology guidance to optimize and scale your business infrastructure.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About URR</h2>
+    <div class="about">
+        <p>
+            Universal Relis Resources (URR) is a forward-thinking technology company delivering
+            innovative digital solutions to businesses worldwide. Our team of experts combines
+            creativity, strategy, and technical excellence to build solutions that drive growth
+            and competitive advantage.
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact">
+        <p>Ready to transform your business?</p>
+        <p><strong>Call Us:</strong> +2349127724646</p>
+        <a href="tel:+2349127724646">Call Now</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Universal Relis Resources (URR). All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
